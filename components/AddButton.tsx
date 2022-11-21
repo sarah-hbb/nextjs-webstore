@@ -10,7 +10,7 @@ const AddButton = ({ productData }: AddButtonProps) => {
   const cartCtx = useContext(CartContext);
 
   return (
-    <div
+    <div className="hover:scale-125 transition ease-in-out duration-500"
       onClick={() => {
         cartCtx?.dispatchCart({ type: "ADD-TO-CART", product: productData });
       }}
